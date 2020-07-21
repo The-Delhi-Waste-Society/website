@@ -1,0 +1,241 @@
+// RFS import
+@import "../../node_modules/rfs/stylus.styl";
+
+// Font imports
+@font-face
+   font-family BebasNeue
+   src url(/fonts/BebasNeue-Regular.ttf)
+
+@font-face
+   font-family SourceSansPro
+   src url(/fonts/SourceSansPro-Regular.ttf)
+   font-weight 400
+
+@font-face
+   font-family SourceSansPro
+   src url(/fonts/SourceSansPro-SemiBold.ttf)
+   font-weight 600
+
+white = #ffffff
+darkGrey = #4f4f4f
+black = #000000
+backgroundWhite = #f9f9f9
+red = #bd1613
+
+body 
+   margin 0
+   padding 0
+   color darkGrey
+   background-color backgroundWhite
+   font-family SourceSansPro
+
+a
+   rfs(1rem)
+   text-decoration none
+   color black
+
+img
+   width 100%
+   
+h1 
+   rfs(2.3rem)
+
+h1 a
+   rfs(2.3rem)
+
+h2
+   rfs(1.7rem)
+
+h2 a
+   rfs(1.7rem)
+
+h3
+   rfs(1.5rem)
+
+h3 a
+   rfs(1.5rem)
+
+h4
+   rfs(1.2rem)
+
+h4 a
+   rfs(1.2rem)
+
+h5
+   rfs(0.9rem)
+
+h5 a
+   rfs(0.9rem)
+
+h6, h6 a
+   rfs(1rem)
+
+p 
+   rfs(1.1rem)
+   margin-top 0
+   margin-bottom 0
+   line-height 25px
+
+p a
+   rfs(1.1rem)
+   font-weight bold
+
+h1, h2, h3, h4, h5, h6
+   margin-top 0
+   margin-bottom 0
+
+button
+   background-color rgba(0,0,0,0)
+   border 2px solid red
+   padding 10px 20px
+   border-radius 5px
+   font-weight 600
+   color red
+   margin-top 15px
+   transition 0.2s
+
+button:hover
+   background-color red
+   color white
+
+hr
+   width 80%
+   margin-top 50px
+   margin-bottom 50px
+   border none
+   // border-radius 5px
+   background-color red
+   height 1px
+   // opacity 0.6
+
+.widthRestriction
+   width 85%
+   display block
+   margin 0 auto
+
+.center
+	text-align center
+
+::selection
+   background-color darkGrey
+   color white
+
+.logoFont
+   font-family BebasNeue
+
+.red
+   color red
+
+.parallax 
+   background-color backgroundWhite
+
+// Column definitions
+.col-2
+   width 50%
+   display inline-block
+   vertical-align middle
+
+.col-3
+   width 33%
+   display inline-block
+   vertical-align top
+
+@media screen and (max-width 800px)
+   .col-2
+      width 100%
+   .col-3
+      width 50%
+   #col-3-3
+      width 100%
+   #col-3-3 .card
+      width 50%
+      margin 0 auto
+
+@media screen and (max-width 600px)
+   .col-3
+      width 100%
+   #col-3-3 .card
+      width 100%
+      margin auto
+   .col-2 .widthRestriction
+      width 100%
+// Topnav styling
+nav
+   width 100%
+   text-align right
+   background-color white
+   white-space nowrap
+   overflow-x auto
+   position fixed 
+   top 0px
+   display inline-block
+   box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+   padding-bottom 20px
+   padding-top 20px
+   z-index 2
+
+nav h1, nav .topnavLinks
+   display inline-block
+
+nav h1
+   float left
+   margin-right 40px
+
+nav .topnavLinks
+   display block
+
+nav .topnavLinks a
+   margin-right 13px
+   transition 0.2s
+   color darkGrey
+   padding-bottom 7px
+   border-bottom 1px solid rgba(0,0,0,0)
+
+nav .topnavLinks a:hover
+   padding-bottom 7px
+   border-bottom 1px solid red
+
+// Banner styling
+.banner
+   height 85%
+   width 100%
+   background-image url('/images/banner.jpg')
+   background-position 50% 50% // x% y% x(100%)=right and y(100%)=bottom
+   background-repeat no-repeat
+   background-attachment fixed
+   background-size cover
+   height 100%
+
+.banner mark
+   color white
+   background-color rgba(0,0,0,0)
+   // padding 10px 30px
+   
+.banner h1
+   rfs(3rem)
+
+.banner h2
+   rfs(2rem)
+
+// MainContent styling
+.mainContent h1
+   margin-bottom 10px
+
+// The Team styling
+.card
+   background-color white
+   border-radius 10px
+   box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+   margin-bottom 20px
+   
+.card img
+   border-top-left-radius 10px
+   border-top-right-radius 10px
+
+// Footer styling
+.col-2 .widthRestriction p a, .col-2 .widthRestriction h4 a
+   transition 0.2s
+
+.col-2 .widthRestriction p a:hover, .col-2 .widthRestriction h4 a:hover
+   padding-bottom 7px
+   border-bottom 1px solid red

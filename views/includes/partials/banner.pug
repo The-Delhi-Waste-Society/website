@@ -1,0 +1,17 @@
+section.banner
+	.widthRestriction
+		#bannerContent.center
+			img(src="/images/badgeLogo.png" style="max-width: 300px")
+			h1 
+				mark 
+					| Bringing waste segregation to you
+			br
+			br
+			h2
+				mark 
+					| A highschool students initiative
+			//- h2 A highschool students initiative
+
+	script.
+		var bannerContent = document.getElementById('bannerContent');
+		bannerContent.style.paddingTop = (screen.height - topnav.offsetHeight - bannerContent.offsetHeight)/3;

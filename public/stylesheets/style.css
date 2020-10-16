@@ -22,7 +22,7 @@ body {
 a {
   font-size: 1rem;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 img {
   width: 100%;
@@ -112,16 +112,16 @@ h6 {
 }
 button {
   background-color: rgba(0,0,0,0);
-  border: 2px solid #bd1613;
+  border: 2px solid #0ab68b;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: 600;
-  color: #bd1613;
+  color: #0ab68b;
   margin-top: 15px;
   transition: 0.2s;
 }
 button:hover {
-  background-color: #bd1613;
+  background-color: #0ab68b;
   color: #fff;
 }
 hr {
@@ -129,7 +129,7 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px;
   border: none;
-  background-color: #bd1613;
+  background-color: #0ab68b;
   height: 1px;
 }
 .widthRestriction {
@@ -148,7 +148,7 @@ hr {
   font-family: BebasNeue;
 }
 .red {
-  color: #bd1613;
+  color: #0ab68b;
 }
 .parallax {
   padding-top: 50px;
@@ -225,7 +225,7 @@ nav .topnavLinks a {
 }
 nav .topnavLinks a:hover {
   padding-bottom: 7px;
-  border-bottom: 1px solid #bd1613;
+  border-bottom: 1px solid #0ab68b;
 }
 .banner {
   height: 85%;
@@ -277,5 +277,5 @@ nav .topnavLinks a:hover {
 .col-2 .widthRestriction p a:hover,
 .col-2 .widthRestriction h4 a:hover {
   padding-bottom: 7px;
-  border-bottom: 1px solid #bd1613;
+  border-bottom: 1px solid #0ab68b;
 }

@@ -1,12 +1,13 @@
 nav#topnav
 	.widthRestriction
-		h1.logoFont.red#logo The Delhi Waste Society
+		a(href="/")
+			h1.logoFont.red#logo The Delhi Waste Society
 		div.topnavLinks#topnavLinks
-			a(href="#projects") 🏠 Home
-			a(href="#repertoire") 📄 Our Project
-			a(href="#experience") 🎯 Action
-			a(href="#blog") ✏️ Blog
-			a(href="#reachMe") ☎️ Reach Us
+			a(href="#projects") Home
+			a(href="#repertoire") Our Project
+			a(href="#experience") Action
+			a(href="#blog") Blog
+			a(href="#reachMe") Reach Us
 	script.
 		window.onload = function startScript() {	
 			var topnav = document.getElementById('topnav');

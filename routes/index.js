@@ -10,12 +10,4 @@ router.get('/project', function(req, res, next) {
   res.render('project', {});
 });
 
-router.get('/action', function(req, res, next) {
-  res.render('action', {});
-});
-
-router.get('/blog', function(req, res, next) {
-  res.render('blog', {});
-});
-
 module.exports = router;
